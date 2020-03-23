@@ -83,5 +83,5 @@ https://github.com/fancycode/MemoryModule
 He also made a great write-up explaining the basics of mapping a moule:
 https://www.joachim-bauch.de/tutorials/loading-a-dll-from-memory/
 
-I also want to thank Akaion for helping me with SEH support and whose C# mapping library was a great resource to learn from:
+I also want to thank Akaion for helping me with SEH support and their C# mapping library which was a great resource to learn from:
 https://github.com/Dewera/Lunar
