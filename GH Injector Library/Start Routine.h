@@ -21,10 +21,10 @@ enum class SR_REMOTE_STATE : ULONG_PTR
 //enum which is used to determine the state of the remote code
 
 #ifdef _WIN64
-using f_Routine			= ULONG_PTR(__fastcall*)(void * pArg);
-using f_Routine_WOW64	= DWORD; //ULONG_PTR(__stdcall*)(ULONG pArg);
+using f_Routine			= DWORD(__fastcall*)(void * pArg);
+using f_Routine_WOW64	= DWORD; //DWORD(__stdcall*)(void * pArg);
 #else
-using f_Routine = ULONG_PTR(__stdcall*)(void * pArg);
+using f_Routine = DWORD(__stdcall*)(void * pArg);
 #endif
 
 #define SR_REMOTE_TIMEOUT 2000
