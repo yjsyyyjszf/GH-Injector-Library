@@ -1,6 +1,6 @@
 ## GH Injector Library
 
-A feature-rich DLL injection library which supports x86, WOW64 and x64.
+A feature-rich DLL injection library which supports x86, WOW64 and x64 injections.
 
 ----
 
@@ -18,12 +18,20 @@ A feature-rich DLL injection library which supports x86, WOW64 and x64.
 - SetWindowsHookEx
 - QueueUserAPC
 
+### Manual mapping features:
+- Section mapping
+- Base relocation
+- Imports
+- Delayed imports
+- SEH support
+- TLS initialization
+- Security cookie initalization
+
 ### Additional features
 - Various cloaking options
 	- PEB unlinking
 	- PE header cloaking
 	- Thread cloaking
-- Fully customizable manual mapping
 - Handle hijacking
 - Hook scanning/restoring
 
@@ -61,3 +69,16 @@ strcpy(data.szDllPath, DllPathToInject);
 InjectA(&data);
 
 ```
+
+---
+
+### Credits
+
+First of all I want to credit Joachim Bauch whose Memory Module Library was a great source to learn from:
+https://github.com/fancycode/MemoryModule
+
+He also made a great write-up explaining the basics of mapping a moule:
+https://www.joachim-bauch.de/tutorials/loading-a-dll-from-memory/
+
+I also want to thank Akaion for helping me with SEH support and whose C# mapping library was a great resource to learn from:
+https://github.com/Dewera/Lunar
