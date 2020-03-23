@@ -1,6 +1,8 @@
 ## GH Injector Library
 
 A feature-rich DLL injection library which supports x86, WOW64 and x64 injections.
+It features four injection methods, four shellcode execution methods and various additional options.
+Session seperation can be bypassed with all methods.
 
 ----
 
@@ -19,6 +21,7 @@ A feature-rich DLL injection library which supports x86, WOW64 and x64 injection
 - QueueUserAPC
 
 ### Manual mapping features:
+
 - Section mapping
 - Base relocation
 - Imports
