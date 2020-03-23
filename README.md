@@ -23,7 +23,7 @@ A feature-rich DLL injection library which supports x86, WOW64 and x64.
 	- PEB unlinking
 	- PE header cloaking
 	- Thread cloaking
-- Fully customizable ManualMapping
+- Fully customizable manual mapping
 - Handle hijacking
 - Hook scanning/restoring
 
