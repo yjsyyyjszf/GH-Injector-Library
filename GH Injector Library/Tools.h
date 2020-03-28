@@ -35,7 +35,7 @@
 
 
 //Global variable to store the base address of the current image of the injector. Initialized in DllMain.
-extern HINSTANCE g_hInjMod;
+inline HINSTANCE g_hInjMod;
 
 UINT __forceinline _strlenA(const char * szString)
 {

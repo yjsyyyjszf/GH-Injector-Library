@@ -35,9 +35,9 @@ struct PdbInfo
 };
 
 #ifdef  _WIN64
-extern SYMBOL_PARSER				sym_ntdll_wow64;
-extern std::shared_future<DWORD>	sym_ntdll_wow64_ret;
+inline SYMBOL_PARSER				sym_ntdll_wow64;
+inline std::shared_future<DWORD>	sym_ntdll_wow64_ret;
 #endif
 
-extern SYMBOL_PARSER				sym_ntdll_native;
-extern std::shared_future<DWORD>	sym_ntdll_native_ret;
+inline SYMBOL_PARSER				sym_ntdll_native;
+inline std::shared_future<DWORD>	sym_ntdll_native_ret;

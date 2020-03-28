@@ -3,16 +3,6 @@
 #include "Injection.h"
 #include "Symbol Parser.h"
 
-HINSTANCE g_hInjMod = NULL;
-
-#ifdef _WIN64
-SYMBOL_PARSER				sym_ntdll_wow64;
-std::shared_future<DWORD>	sym_ntdll_wow64_ret;
-#endif
-
-SYMBOL_PARSER				sym_ntdll_native;
-std::shared_future<DWORD>	sym_ntdll_native_ret;
-
 BOOL WINAPI DllMain(HINSTANCE hDll, DWORD dwReason, void * pReserved)
 {
 	UNREFERENCED_PARAMETER(pReserved);
